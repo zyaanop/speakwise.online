@@ -1,0 +1,45 @@
+
+/* Speakwise modern dark AI theme */
+:root{
+  --bg:#0b0f13;
+  --card:#0f1720;
+  --muted:#98a0b3;
+  --accent1:#3dd5ff;
+  --accent2:#8a5cff;
+  --glass: rgba(255,255,255,0.04);
+  --radius: 12px;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;}
+body{background:linear-gradient(180deg,var(--bg),#071019);color:#e6eef8;line-height:1.5;font-size:16px;}
+
+/* container */
+.container{max-width:1100px;margin:0 auto;padding:48px 20px;}
+
+/* Hero */
+.hero{display:flex;align-items:center;gap:36px;padding:48px;border-radius:16px;background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));box-shadow:0 6px 30px rgba(2,6,23,0.6);}
+.hero-left{flex:1}
+.hero-title{font-size:40px;margin:0 0 12px 0;letter-spacing:-0.02em}
+.hero-sub{color:var(--muted);margin:0 0 20px 0;font-size:18px}
+.cta{display:inline-block;padding:12px 20px;border-radius:12px;background:linear-gradient(90deg,var(--accent1),var(--accent2));color:#041226;font-weight:700;text-decoration:none;box-shadow:0 8px 30px rgba(58, 141, 255, 0.12);}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:28px}
+.card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(3,6,15,0.6);}
+
+/* Services & about */
+.section{margin-top:48px}
+.section h2{margin:0 0 12px 0;font-size:24px}
+.section p{color:var(--muted)}
+
+/* Contact form */
+.contact-row{display:flex;gap:12px;flex-wrap:wrap}
+.input, textarea{background:var(--glass);border:1px solid rgba(255,255,255,0.04);padding:12px;border-radius:10px;color:inherit;width:100%;min-width:0}
+button.btn{padding:10px 14px;border-radius:10px;border:0;background:linear-gradient(90deg,var(--accent2),var(--accent1));color:#041226;font-weight:700;cursor:pointer}
+
+/* Footer */
+.footer{margin-top:48px;padding:24px;text-align:center;color:var(--muted);font-size:14px}
+
+/* responsive */
+@media (max-width:800px){
+  .hero{flex-direction:column;align-items:flex-start;padding:28px}
+  .hero-title{font-size:28px}
+}
